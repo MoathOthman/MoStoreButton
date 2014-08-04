@@ -42,16 +42,19 @@
     NSLog(@"click  %i",button.currentIndex);
     if (button.currentIndex ==-1){
         // Clicked after downloading the ' open' button
-        
+        NSLog(@"button Finish state clicked ");
+
     }
     else if (button.currentIndex ==0){
         NSLog(@"buttonClickedFirstTime");
+        // to cancel downloading selector if exists
         [NSObject cancelPreviousPerformRequestsWithTarget:self];
         [NSObject cancelPreviousPerformRequestsWithTarget:button];
         currentProgress =0;
     }else if (button.currentIndex==1){
         
         NSLog(@"buttonClickedSecondTime");
+        // to mimic download operation
         [self performSelector:@selector(startDownloading:) withObject:button afterDelay:2];
     }
 }
@@ -71,7 +74,7 @@
     storeButton.buttonDelegate=self;
     storeButton.titleLabel.font =[UIFont systemFontOfSize:13];
     storeButton.isInTestingMode=YES;
-    storeButton.finishedDownloadingButtonTitle=@"Open";
+    storeButton.finishedDownloadingButtonTitle=@"Open ~>";
     [storeButton setTitles:@[@"$0.99",@"buy"]];
     
     
@@ -79,10 +82,11 @@
     
     
     /*setup second but blue Free button*/
+    
     MOStoreButton*storeButton1 =[[MOStoreButton alloc]initWithFrame:CGRectMake(100, 260, 80, 40) andColor:[UIColor blueColor]];
     storeButton1.buttonDelegate=self;
     storeButton1.titleLabel.font =[UIFont systemFontOfSize:17];
-    storeButton1.finishedDownloadingButtonTitle =@"What EVER !!";
+    storeButton1.finishedDownloadingButtonTitle =@"Open";
     [storeButton1 setTitles:@[@"free",@"INSTALL"]];
     
     
