@@ -12,7 +12,9 @@ simple-to-use iOS 7 Appstore like button
 - iOS 7.0 + 
 - ARC
 
+#Screen shot
 
+![screenShot](https://dl.dropboxusercontent.com/u/33359624/iOS%20Simulator%20Screen%20shot%20Aug%2014%2C%202014%2C%203.31.35%20PM.png)
 
 #USAGE
 

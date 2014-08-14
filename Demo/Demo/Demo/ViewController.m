@@ -17,6 +17,7 @@
 @end
 
 @implementation ViewController
+
 -(void)updateProgress:(MOStoreButton*)button{
     if (currentProgress>=1) {
         
@@ -95,10 +96,5 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
