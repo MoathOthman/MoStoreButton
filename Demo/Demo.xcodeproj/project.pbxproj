@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049456DCC5F46EF521A7B95A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6282F742C11CB258AF6BC057 /* libPods.a */; };
 		EC0C31E9198DF24E0093E5A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0C31E8198DF24E0093E5A9 /* Foundation.framework */; };
 		EC0C31ED198DF24E0093E5A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0C31EC198DF24E0093E5A9 /* UIKit.framework */; };
 		EC0C31F3198DF24E0093E5A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC0C31F1198DF24E0093E5A9 /* InfoPlist.strings */; };
@@ -20,7 +21,6 @@
 		EC0C320A198DF24E0093E5A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0C31EC198DF24E0093E5A9 /* UIKit.framework */; };
 		EC0C3212198DF24E0093E5A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC0C3210198DF24E0093E5A9 /* InfoPlist.strings */; };
 		EC0C3214198DF24E0093E5A9 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0C3213198DF24E0093E5A9 /* DemoTests.m */; };
-		EC0C3220198DF2770093E5A9 /* MOStoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0C321F198DF2770093E5A9 /* MOStoreButton.m */; };
 		ECE902541C96BD7F00592C66 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE902531C96BD7F00592C66 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05715F1D05D1FD3097D449E1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1B78B36B52721CAA9ACA4CB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6282F742C11CB258AF6BC057 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0C31E5198DF24E0093E5A9 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0C31E8198DF24E0093E5A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EC0C31EA198DF24E0093E5A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,8 +57,6 @@
 		EC0C320F198DF24E0093E5A9 /* DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemoTests-Info.plist"; sourceTree = "<group>"; };
 		EC0C3211198DF24E0093E5A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC0C3213198DF24E0093E5A9 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
-		EC0C321E198DF2770093E5A9 /* MOStoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOStoreButton.h; sourceTree = "<group>"; };
-		EC0C321F198DF2770093E5A9 /* MOStoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOStoreButton.m; sourceTree = "<group>"; };
 		ECE902531C96BD7F00592C66 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +67,7 @@
 			files = (
 				EC0C31ED198DF24E0093E5A9 /* UIKit.framework in Frameworks */,
 				EC0C31E9198DF24E0093E5A9 /* Foundation.framework in Frameworks */,
+				049456DCC5F46EF521A7B95A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B7B32097CFE43468A0B8107 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05715F1D05D1FD3097D449E1 /* Pods.debug.xcconfig */,
+				1B78B36B52721CAA9ACA4CB5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC0C31DC198DF24E0093E5A9 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +100,7 @@
 				EC0C320D198DF24E0093E5A9 /* DemoTests */,
 				EC0C31E7198DF24E0093E5A9 /* Frameworks */,
 				EC0C31E6198DF24E0093E5A9 /* Products */,
+				0B7B32097CFE43468A0B8107 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +120,7 @@
 				EC0C31EA198DF24E0093E5A9 /* CoreGraphics.framework */,
 				EC0C31EC198DF24E0093E5A9 /* UIKit.framework */,
 				EC0C3207198DF24E0093E5A9 /* XCTest.framework */,
+				6282F742C11CB258AF6BC057 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,7 +128,6 @@
 		EC0C31EE198DF24E0093E5A9 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				EC0C321D198DF2770093E5A9 /* MOStoreButton */,
 				EC0C31F7198DF24E0093E5A9 /* AppDelegate.h */,
 				EC0C31F8198DF24E0093E5A9 /* AppDelegate.m */,
 				EC0C31FA198DF24E0093E5A9 /* Main.storyboard */,
@@ -157,16 +169,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EC0C321D198DF2770093E5A9 /* MOStoreButton */ = {
-			isa = PBXGroup;
-			children = (
-				EC0C321E198DF2770093E5A9 /* MOStoreButton.h */,
-				EC0C321F198DF2770093E5A9 /* MOStoreButton.m */,
-			);
-			name = MOStoreButton;
-			path = ../../../MOStoreButton;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC0C3217198DF24E0093E5A9 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				B801BDF22E799645D85555A2 /* Check Pods Manifest.lock */,
 				EC0C31E1198DF24E0093E5A9 /* Sources */,
 				EC0C31E2198DF24E0093E5A9 /* Frameworks */,
 				EC0C31E3198DF24E0093E5A9 /* Resources */,
+				61FEAF0A55A305944BEDA027 /* Embed Pods Frameworks */,
+				22C7E958906EBA11799FDB83 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +265,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22C7E958906EBA11799FDB83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61FEAF0A55A305944BEDA027 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B801BDF22E799645D85555A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC0C31E1198DF24E0093E5A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,7 +321,6 @@
 				EC0C31FF198DF24E0093E5A9 /* ViewController.m in Sources */,
 				EC0C31F9198DF24E0093E5A9 /* AppDelegate.m in Sources */,
 				EC0C31F5198DF24E0093E5A9 /* main.m in Sources */,
-				EC0C3220198DF2770093E5A9 /* MOStoreButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +442,7 @@
 		};
 		EC0C3218198DF24E0093E5A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05715F1D05D1FD3097D449E1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -403,6 +456,7 @@
 		};
 		EC0C3219198DF24E0093E5A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B78B36B52721CAA9ACA4CB5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

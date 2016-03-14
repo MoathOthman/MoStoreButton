@@ -1,0 +1,10 @@
+PODS:
+  - MOStoreButton (0.1.0)
+
+DEPENDENCIES:
+  - MOStoreButton
+
+SPEC CHECKSUMS:
+  MOStoreButton: ba64b2065fe9bfd9652ce58e49122feb2bec1f11
+
+COCOAPODS: 0.39.0
