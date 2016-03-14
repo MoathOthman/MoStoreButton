@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EC0C31E9198DF24E0093E5A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0C31E8198DF24E0093E5A9 /* Foundation.framework */; };
-		EC0C31EB198DF24E0093E5A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0C31EA198DF24E0093E5A9 /* CoreGraphics.framework */; };
 		EC0C31ED198DF24E0093E5A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0C31EC198DF24E0093E5A9 /* UIKit.framework */; };
 		EC0C31F3198DF24E0093E5A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC0C31F1198DF24E0093E5A9 /* InfoPlist.strings */; };
 		EC0C31F5198DF24E0093E5A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0C31F4198DF24E0093E5A9 /* main.m */; };
@@ -22,6 +21,7 @@
 		EC0C3212198DF24E0093E5A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC0C3210198DF24E0093E5A9 /* InfoPlist.strings */; };
 		EC0C3214198DF24E0093E5A9 /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0C3213198DF24E0093E5A9 /* DemoTests.m */; };
 		EC0C3220198DF2770093E5A9 /* MOStoreButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0C321F198DF2770093E5A9 /* MOStoreButton.m */; };
+		ECE902541C96BD7F00592C66 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE902531C96BD7F00592C66 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +56,7 @@
 		EC0C3213198DF24E0093E5A9 /* DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTests.m; sourceTree = "<group>"; };
 		EC0C321E198DF2770093E5A9 /* MOStoreButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOStoreButton.h; sourceTree = "<group>"; };
 		EC0C321F198DF2770093E5A9 /* MOStoreButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOStoreButton.m; sourceTree = "<group>"; };
+		ECE902531C96BD7F00592C66 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC0C31EB198DF24E0093E5A9 /* CoreGraphics.framework in Frameworks */,
 				EC0C31ED198DF24E0093E5A9 /* UIKit.framework in Frameworks */,
 				EC0C31E9198DF24E0093E5A9 /* Foundation.framework in Frameworks */,
 			);
@@ -134,6 +134,7 @@
 				EC0C31F1198DF24E0093E5A9 /* InfoPlist.strings */,
 				EC0C31F4198DF24E0093E5A9 /* main.m */,
 				EC0C31F6198DF24E0093E5A9 /* Demo-Prefix.pch */,
+				ECE902531C96BD7F00592C66 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,6 +245,7 @@
 			files = (
 				EC0C3201198DF24E0093E5A9 /* Images.xcassets in Resources */,
 				EC0C31F3198DF24E0093E5A9 /* InfoPlist.strings in Resources */,
+				ECE902541C96BD7F00592C66 /* Launch Screen.storyboard in Resources */,
 				EC0C31FC198DF24E0093E5A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +392,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
@@ -404,7 +405,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
 				INFOPLIST_FILE = "Demo/Demo-Info.plist";
