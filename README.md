@@ -49,7 +49,7 @@ We Care here about the currentIndex which determine the state of the button tran
 	}
 
 #Author 
-Twitter : [dark_torch](https://twitter.com/dark_torch)
-website: https://moathothman.com
-check my app PuzzPic http://apple.co/2a6Ow8W
+ * Twitter : [dark_torch](https://twitter.com/dark_torch)
+ * Website: https://moathothman.com
+ * Check my app PuzzPic http://apple.co/2a6Ow8W
 	
