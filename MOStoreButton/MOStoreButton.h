@@ -35,4 +35,9 @@
 -(void)startDownloading;
 
 - (id)initWithFrame:(CGRect)frame andColor:(UIColor*)buttonColor;
+
+- (void)setAnchor:(CGPoint)anchor;
+
+- (void)reset;
+
 @end
