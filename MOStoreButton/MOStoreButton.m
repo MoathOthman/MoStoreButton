@@ -46,6 +46,25 @@
     return self;
 }
 
+- (void)reset {
+
+  [self.layer removeAllAnimations];
+
+  _currentIndex =-1;
+  [self setButtonWithoutAnimationOrDrawing:_titles[0]];
+
+  // restore initial state, from setup
+  [self setupAnimationVariables];
+  shouldItBeCleared = NO;
+  _currentIndex = 0;
+}
+
+- (void)setAnchor:(CGPoint)anchor {
+  CGRect rect = self.frame;
+  rect.origin = CGPointMake(anchor.x - rect.size.width, anchor.y);
+  self.frame = rect;
+}
+
 -(void)removeBorder{
     self.layer.borderColor =[UIColor clearColor].CGColor;
     //
